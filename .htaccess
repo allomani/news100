@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteRule ^browse_(.*)_(.*)_(.*).html index.php?action=browse&date=$2&cat=$1&start=$3
+RewriteRule ^browse_(.*)_(.*).html index.php?action=browse&cat=$1&start=$2
+RewriteRule ^browse_(.*).html index.php?action=browse&cat=$1
+RewriteRule ^browse.html index.php?action=browse
+
+RewriteRule ^style.css css.php
+
+RewriteRule ^short-(.*).html get_short_content.php?id=$1
+RewriteRule ^news-(.*).html index.php?action=news&id=$1
