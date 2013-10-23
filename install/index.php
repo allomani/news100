@@ -19,7 +19,7 @@
     $product_name = "News";
     $product_ver = "1.0";
 
-    $files_perms = array("config.php","uploads/","license/");
+    $files_perms = array("config.php","uploads/");
 
     $steps = array(1 => 'Server Requirements' , 2=> 'Configuration' , 3=> 'Database Clean' , 4=> 'Database Installation' , 5=> 'Installation Done');
     $step = (int) $_REQUEST['step'];
